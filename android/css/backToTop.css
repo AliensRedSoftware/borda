@@ -1,0 +1,39 @@
+
+/* Back to top */
+
+.back-to-top {
+  visibility: hidden;
+  background-color: #374760;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 34px;
+  position: fixed;
+  bottom: 65px;
+  left: 35px;
+  z-index: 90;
+  cursor: pointer;
+  border-radius: 1px;
+  opacity: 0;
+  -webkit-transform: translateZ(0);
+  transition: all .6s;
+}
+
+.back-to-top .fa {
+  font-size: 16px;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.back-to-top:hover {
+  background-color: #3cc091;
+  opacity: 1
+}
+
+.back-to-top.show {
+  visibility: visible;
+  position: sticky;
+  bottom: 35px;
+  opacity: 1;
+  margin-bottom: 5px;
+}
